@@ -1,7 +1,49 @@
-<html>
-<head><title>404 Not Found</title></head>
-<body>
-<center><h1>404 Not Found</h1></center>
-<hr><center>nginx</center>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件不存在</title>
+    <!-- 引入 MDUI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+</head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <div class="mdui-col-xs-12 mdui-col-md-8 mdui-col-offset-md-2">
+                <div class="mdui-card mdui-m-t-5">
+                    <div class="mdui-card-media">
+                        <div class="mdui-color-red-500 mdui-valign" style="height: 200px;">
+                            <i class="mdui-icon material-icons mdui-text-color-white mdui-center" style="font-size: 80px;">error_outline</i>
+                        </div>
+                    </div>
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title">文件未找到</div>
+                        <div class="mdui-card-primary-subtitle">404 - File Not Found</div>
+                    </div>
+                    <div class="mdui-card-content mdui-typo">
+                        <p>抱歉，您请求的文件不存在或已被移除。</p>
+                        <p>可能的原因：</p>
+                        <ul>
+                            <li>文件路径不正确</li>
+                            <li>文件已被删除或移动</li>
+                            <li>输入的文件名有误</li>
+                        </ul>
+                    </div>
+                    <div class="mdui-card-actions">
+                        <button class="mdui-btn mdui-ripple mdui-color-theme-accent" onclick="history.back()">
+                            <i class="mdui-icon material-icons">arrow_back</i> 返回上一页
+                        </button>
+                        <button class="mdui-btn mdui-ripple" onclick="location.href='https://www.yuimoe.top/'">
+                            <i class="mdui-icon material-icons">home</i> 返回首页
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 MDUI JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 </body>
 </html>
